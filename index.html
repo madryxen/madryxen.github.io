@@ -5,22 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>madryxen</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #121212; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
-        .profile-img { width: 96px; height: 96px; border-radius: 50%; background: #333; margin-bottom: 10px; }
-        h1 { font-size: 20px; margin-bottom: 20px; }
-        .btn { display: block; width: 100%; max-width: 320px; background: white; color: black; text-decoration: none; text-align: center; padding: 15px; margin: 10px 0; border-radius: 30px; font-weight: bold; transition: 0.2s; box-sizing: border-box; }
-        .btn:hover { transform: scale(1.02); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #06040a 100%); 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            padding: 30px 20px; 
+        }
+        .profile-container { text-align: center; margin-bottom: 30px; }
+        .profile-img { 
+            width: 110px; 
+            height: 110px; 
+            border-radius: 50%; 
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            object-fit: cover;
+            margin-bottom: 15px; 
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 5px; }
+        .bio { font-size: 14px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px; }
+        .links-container { width: 100%; max-width: 340px; }
+        .btn { 
+            display: block; 
+            width: 100%; 
+            background: rgba(255, 255, 255, 0.07); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white; 
+            text-decoration: none; 
+            text-align: center; 
+            padding: 16px; 
+            margin: 14px 0; 
+            border-radius: 16px; 
+            font-weight: 600; 
+            font-size: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease; 
+        }
+        .btn:active { 
+            transform: scale(0.97); 
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
     </style>
 </head>
 <body>
 
-    <!-- Ide jön a neved -->
-    <h1>@madryxen</h1>
+    <div class="profile-container">
+        <!-- PROFILKÉP: Ide másold be a képed linkjét az "src" idézőjelei közé -->
+        <img src="https://ibb.co/XrFNNsCg" alt="madryxen" class="profile-img">
+        <h1>@madryxen</h1>
+        <p class="bio"></p>
+    </div>
 
-    <!-- Cseréld ki a linkeket (href) és a szövegeket a sajátjaidra! -->
-    <a href="https://instagram.com/FELHASZNALONEV" class="btn" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@FELHASZNALONEV" class="btn" target="_blank">TikTok</a>
-    <a href="https://youtube.com/FELHASZNALONEV" class="btn" target="_blank">YouTube</a>
+    <div class="links-container">
+        <!-- A 4 LINK: Cseréld ki a LINK_HELYE részt a saját profiljaid linkjére! -->
+        <a href="instagram.com/madryxen" class="btn" target="_blank">Instagram</a>
+        <a href="tiktok.com/madryxen" class="btn" target="_blank">TikTok</a>
+        <a href="https://x.com/madryxen?s=11" class="btn" target="_blank">X (Twitter)</a>
+        <a href="https://www.linkedin.com/in/madryxen?trk=contact-info" class="btn" target="_blank">LinkedIn</a>
+    </div>
 
 </body>
 </html>
+
